@@ -1,0 +1,30 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="collective.piwik.core">
+
+    <five:registerPackage package="." initialize=".initialize" />
+    <include package="plone.app.registry" />
+
+
+    <genericsetup:registerProfile
+      name="default"
+      title="Piwik"
+      directory="profiles/default"
+      description="Provides piwik"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+    <!-- Control panel -->
+    <browser:page
+        name="piwik-settings"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        class=".controlpanel.PiwikSettingsControlPanel"
+        permission="cmf.ManagePortal"
+        />
+
+</configure>
+
