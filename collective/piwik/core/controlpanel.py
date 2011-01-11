@@ -15,4 +15,3 @@ class IPiwikSettingsEditForm(controlpanel.RegistryEditForm):
 
 class PiwikSettingsControlPanel(controlpanel.ControlPanelFormWrapper):
     form = IPiwikSettingsEditForm
-~                                                              
