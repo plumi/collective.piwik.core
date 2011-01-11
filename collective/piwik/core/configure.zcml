@@ -12,9 +12,9 @@
 
     <genericsetup:registerProfile
       name="default"
-      title="Piwik"
+      title="collective.piwik.core"
       directory="profiles/default"
-      description="Provides piwik"
+      description="Core package for analytics support using Piwik"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
@@ -22,7 +22,7 @@
     <browser:page
         name="piwik-settings"
         for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-        class=".controlpanel.PiwikSettingsControlPanel"
+        class=".controlpanel.PiwikControlPanelView"
         permission="cmf.ManagePortal"
         />
 

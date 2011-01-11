@@ -1,17 +1,10 @@
-from plone.app.registry.browser import controlpanel
+from plone.app.registry.browser.controlpanel import RegistryEditForm
+from plone.app.registry.browser.controlpanel import ControlPanelFormWrapper
+from collective.piwik.core.interfaces import IPiwikSettings
+from plone.z3cform import layout
 
-from collective.piwik.core.interfaces import IPiwikSettings, _
-
-
-class IPiwikSettingsEditForm(controlpanel.RegistryEditForm):
-
+class PiwikControlPanelForm(RegistryEditForm):
     schema = IPiwikSettings
 
-    def updateFields(self):
-        super(IPiwikSettingsEditForm, self).updateFields()
+PiwikControlPanelView = layout.wrap_form(PiwikControlPanelForm, ControlPanelFormWrapper)
 
-    def updateWidgets(self):
-        super(IPiwikSettingsEditForm, self).updateWidgets()
-
-class PiwikSettingsControlPanel(controlpanel.ControlPanelFormWrapper):
-    form = IPiwikSettingsEditForm

@@ -9,13 +9,10 @@ _ = MessageFactory('collective.piwik.core')
 
 
 class IPiwikSettings(Interface):
-    """Global settings. 
-    """
+    """Piwik settings."""
 
-    piwik_key = schema.TextLine(title=_(u"Piwik auth token key"),
-                                  description=_(u"insert the auth key so that we can communicate with the Piwik server API"),
-                                  required=True,
-                                  default = u'1771d99931264d538e75eeb19da7d6a0',
-                               )
-
+    piwik_key = schema.TextLine(title=_(u"Piwik API key"),
+                                required=True,
+                                default = u'',
+                                )
 

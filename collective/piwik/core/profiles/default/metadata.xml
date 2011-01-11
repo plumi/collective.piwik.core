@@ -1,0 +1,7 @@
+<metadata>
+  <description>Analytics support for Plone using Piwik</description>
+  <version>0.1</version>
+  <dependencies>
+    <dependency>profile-plone.app.registry:default</dependency>
+  </dependencies>
+</metadata>
