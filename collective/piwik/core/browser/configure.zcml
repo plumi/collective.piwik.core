@@ -1,0 +1,15 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="collective.piwik">
+
+  <!-- Zope 3 browser resources -->
+  <browser:resourceDirectory
+      name="collective.piwik.images"
+      directory="images"
+      layer=".interfaces.IPiwikCore"
+      />
+
+
+</configure>
+
