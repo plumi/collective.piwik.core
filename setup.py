@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1'
+version = '0.2'
 
 setup(name='collective.piwik.core',
       version=version,
@@ -14,7 +14,7 @@ setup(name='collective.piwik.core',
         "Framework :: Plone",
         "Programming Language :: Python",
         ],
-      keywords='',
+      keywords='analytics piwik plone',
       author='unweb.me',
       author_email='we@unweb.me',
       url='http://svn.plone.org/svn/collective/piwik/core',
