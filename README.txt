@@ -20,7 +20,8 @@ Created by `unweb.me`_
 
 .. _unweb.me: https://unweb.me
 
-Development partially sponsored by Engagemedia.org
+Development partially sponsored by `Engagemedia.org <http://www.engagemedia.org>`_
+
 
 
 Contributors
