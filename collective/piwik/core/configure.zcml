@@ -19,6 +19,7 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+    
     <!-- Control panel -->
     <browser:page
         name="piwik-settings"
@@ -26,6 +27,9 @@
         class=".controlpanel.PiwikControlPanelView"
         permission="cmf.ManagePortal"
         />
+        
+  <subscriber handler=".subscribers.updateTrackingCode" />
+        
 
 </configure>
 
