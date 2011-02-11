@@ -1,6 +1,12 @@
 Changelog
 =========
 
+0.3 (11 Feb 2011)
+-----------------
+
+- Auto update javascript tracking code when editing Piwik url or site Id
+
+
 0.2 (23 Jan 2011)
 -----------------
 
