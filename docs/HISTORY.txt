@@ -1,6 +1,13 @@
 Changelog
 ~~~~~~~~~
 
+0.4 (17 Dec 2011)
+-----------------
+
+- moved repo to github [garbas, cpsaltis]
+- fix rest syntax [dimo]
+
+
 0.3 (11 Feb 2011)
 -----------------
 
