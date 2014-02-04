@@ -19,6 +19,13 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+    <genericsetup:registerProfile
+      name="uninstall"
+      title="Uninstall collective.piwik.core"
+      directory="profiles/uninstall"
+      description="Uninstall the core package for analytics support using Piwik"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
     
     <!-- Control panel -->
     <browser:page
